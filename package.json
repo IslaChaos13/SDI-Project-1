@@ -1,0 +1,20 @@
+{
+  "name": "sdi-project-1",
+  "version": "1.0.0",
+  "description": "sdi project 1",
+  "homepage": "https://github.com/IslaChaos13/SDI-Project-1#readme",
+  "bugs": {
+    "url": "https://github.com/IslaChaos13/SDI-Project-1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IslaChaos13/SDI-Project-1.git"
+  },
+  "license": "ISC",
+  "author": "TJ Fegurgur",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
