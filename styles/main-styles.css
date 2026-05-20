@@ -1,0 +1,39 @@
+header {
+    background-color: azure;
+    text-align: center;
+    padding: 10px;
+}
+
+body{
+background-color: rgb(78, 78, 78);
+text-align: center;
+padding: 10px
+}
+
+img {
+width: 1200px;
+height: 628px;
+}
+
+.navBar{
+  list-style-type: none;
+  padding: 10px;
+}
+
+.navBar li{
+    display: inline-block;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px:
+    text-align: center;
+}
+
+.main li{
+    list-style-type: none;
+}
+
