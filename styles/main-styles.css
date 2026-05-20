@@ -1,39 +1,65 @@
-header {
-    background-color: azure;
-    text-align: center;
-    padding: 10px;
+body{
+    background-color: rgb(243, 239, 239);
+    padding: 10px
 }
 
-body{
-background-color: rgb(78, 78, 78);
-text-align: center;
-padding: 10px
+h1{
+    text-align: center;
 }
 
 img {
-width: 1200px;
-height: 628px;
+    width: 1200px;
+    height: 628px;
 }
 
 .navBar{
-  list-style-type: none;
-  padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    gap: 5px;
+    padding: 10px;
+
 }
 
 .navBar li{
     display: inline-block;
     margin: 0 20px;
-    text-transform: uppercase;
+
 }
 
 .main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px:
-    text-align: center;
 }
 
 .main li{
     list-style-type: none;
+    justify-content: right;
 }
 
+#showDetails {
+    display: flex;
+    gap: 15px;
+}
+
+.show-card {
+    max-width: 400px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.show-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.show-card p {
+    margin: 8px 0;
+}
+
+.show-card h2 {
+    text-align: center;
+}

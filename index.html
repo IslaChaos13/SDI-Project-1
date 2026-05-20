@@ -3,52 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href = "styles/main-styles.css">
+
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <title>Binge Master</title>
 </head>
-<body>
-<img src = 'images/1.jpg' alt = 'Movie Lover' >
-    <h1>Binge Master</h1>
 
-    <ul class = "navBar">
-        <li>Networks</li>
-        <li>Shows</li>
-        <li>People</li>
-        <li>Search</li>
+<body>
+
+    <img src="images/1.jpg" alt="Movie Lover">
+    <h1>Binge Master</h1>
+    <p>Dive into your next obsession with a website built for nonstop binge-watching. From gripping dramas and laugh-out-loud comedies to edge-of-your-seat thrillers, every series is just a click away. Discover new favorites, revisit classics, and let entire seasons unfold back-to-back without interruption. Whether you’ve got a free evening or a full weekend to disappear into, this is your all-access pass to stories you won’t want to pause.
+</p>
+    <ul class="navBar">
+        <li><button id="showBtn" type="button" class="btn btn-outline-dark">SERIES</button></li>
+        <li><button type="button" class="btn btn-outline-dark">PEOPLE</button></li>
+        <li><input type="text"></li>
+        <li><button type="button" class="btn btn-outline-dark">SEARCH</button></li>
     </ul>
 
-    <div class = "main">
-        <ul id = 'TV Networks'>
-            <h2> Favorite TV Networks</h2>
-            <li>CBS</li>
-            <li>The CW</li>
-            <li>AMC</li>
-        </ul>
 
-        <ul id = 'Popular Shows'>
-            <h2>Favorite Shows</h2>
-            <li>Tracker</li>
-            <li>Supernatural</li>
-            <li>Daryl Dixon</li>
-        </ul>
-
-        <ul ul id = "Famous People">
-            <h2>Favorite Actors</h2>
-            <li>Mark Hamon</li>
-            <li>Jensen Ackles</li>
-            <li>Norman Reedus</li>
-        </ul>
+ <div id="showDetails"></div>
 
 
-    </div>
+<footer>About</footer>
 
-    <footer>About</footer>
-
-
-<!-- //Banner "Title of the Page"
-    // SHOWS / NETWORK / PEOPLE /REVIEWS //
-
-//BOTTOM BANNER -->
+<script src="scripts/fetch.js"></script>
+<script src="scripts/event.js"></script>
 </body>
 </html>
