@@ -63,3 +63,7 @@ img {
 .show-card h2 {
     text-align: center;
 }
+
+footer{
+    display: flex;
+}
