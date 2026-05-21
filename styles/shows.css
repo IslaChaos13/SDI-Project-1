@@ -1,35 +1,46 @@
-#shows{
-    display:grid
-    gap 5px:
+/* PEOPLE */
+
+#header{
+    display: glex
+    justify-content: space-between;
+
+    img{
+        padding: 50px;
+        justify-content: right;
+    }
+
+    h1{
+    font-family: Cambria;
+    text-align: center;
+    }
+
 }
 
-#shows img{
-    width: 20%;
-    height: auto;
-    align-content: flex-start;
-}
-
-#shows h1{
-    background-color: rgb(188, 188, 170);
-    display: center;
-    font-size: larger;
-}
 
 
-.navBar{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    list-style-type: none;
+/* SHOWS */
+#showsHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
     gap: 5px;
-    padding: 10px;
 
+    img{
+        width: 10%
+    }
+}
+#navBar{
+    list-style-type: none;
+    gap: 0;
+    padding: 0;
+
+
+    li{
+        display: inline-block;
+        margin: 0 3px;
+    }
 }
 
-.navBar li{
-    display: inline-block;
-    margin: 0 20px;
-
-}
 
 #showDetails{
     display:grid;
@@ -44,22 +55,27 @@
 }
 
 .show-card {
-    max-width: 400px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background: #fff;
 }
-
-.show-card img {
-    width: 100%;
+    .show-card img {
+    justify-content: center;
+    width: 75%%;
     border-radius: 8px;
 }
 
-.show-card p {
+    .show-card p {
     margin: 8px 0;
 }
 
-.show-card h2 {
+    .show-card h2 {
+    text-align: center;
+}
+#about{
+    cursor: default;
+    text-decoration: underline;
+    font-weight: bold;
     text-align: center;
 }

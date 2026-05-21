@@ -1,50 +1,44 @@
-body{
-    background-color: rgb(243, 239, 239);
-    padding: 10px;
-}
+#home{
+    img{
+        padding: 50px;
+        justify-content: center;
+        width: 1200px;
+        height: 628px;
+    }
 
-h1{
+    h1{
+    font-family: Cambria;
     text-align: center;
+    }
+
+    p{
+        background-color: white;
+    }
 }
 
-img {
-    width: 1200px;
-    height: 628px;
-}
 
 .navBar{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: end;
     list-style-type: none;
-    gap: 5px;
-    padding: 10px;
+    gap: 0;
+    padding: 0;
 
+
+    li{
+        display: inline-block;
+        margin: 0 3px;
+    }
 }
 
-.navBar li{
-    display: inline-block;
-    margin: 0 20px;
 
-}
 
-.main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
-}
-
-.main li{
-    list-style-type: none;
-    justify-content: right;
-}
 
 #showDetails {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
-}
 
-.show-card {
+    .show-card {
     max-width: 400px;
     padding: 15px;
     border: 1px solid #ddd;
@@ -52,19 +46,24 @@ img {
     background: #fff;
 }
 
-.show-card img {
-    width: 100%;
-    border-radius: 8px;
+    .show-card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .show-card p {
+        margin: 8px 0;
+    }
+
+    .show-card h2 {
+        text-align: center;
+    }
 }
 
-.show-card p {
-    margin: 8px 0;
-}
-
-.show-card h2 {
+#about{
+    cursor: default;
+    text-decoration: underline;
+    font-weight: bold;
     text-align: center;
 }
 
-footer{
-    display: flex;
-}

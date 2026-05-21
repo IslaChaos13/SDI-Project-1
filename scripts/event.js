@@ -19,3 +19,7 @@
      document.querySelector("#commentsBtn").addEventListener("click", () => {
         window.location.href = "../pages/comments.html";
     });
+
+    document.querySelector("#about").addEventListener("click", ()=> {
+        window.location.href ="../pages/about.html"
+    });
