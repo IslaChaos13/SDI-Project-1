@@ -1,10 +1,14 @@
 
 const submit = document.querySelector('#submitBtn')
 const surveyForm = document.querySelector('#survey');
+const list = document.querySelector("#surveyResults");
+
 
 function addResponse(){
 
-    const list = document.querySelector("#surveyResults");
+    const card = document.createElement('div');
+
+
     const aliasName = document.querySelector("#alias").value;
     const ageRange = document.querySelector("#ageRange").value;
     const screenTime = document.querySelector("#screenTime").value;
@@ -19,7 +23,7 @@ function addResponse(){
     const viewItem = document.createElement("li");
     viewItem.textContent = "Watches more: " + viewType;
 
-    list.append(aliases, ageBracket, viewTime, viewItem)
+    card.append(aliases, ageBracket, viewTime, viewItem)
 
     const checkedGenres = document.querySelectorAll(
         'input[type="checkbox"]:checked'
@@ -28,8 +32,10 @@ function addResponse(){
     checkedGenres.forEach((genre) => {
         const li = document.createElement("li");
         li.textContent = "Genre: " + genre.value;
-        list.appendChild(li)
+        card.appendChild(li)
     });
+
+    list.appendChild(card)
 
      surveyForm.reset()
 

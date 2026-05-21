@@ -12,88 +12,74 @@
 
         <h1> Let's hear from you!</h1>
         <img src="../images/bingeMaster.png">
-
     </div>
 
-    <div id ="surveyPage">
-    <form id = "survey">
-        <p>About You</p>
+    <div>
+        <ul class="navBar">
+            <li><button id="homeBtn" type="button" class="btn btn-outline-dark">Home</button></li>
+            <li><button id="showBtn" type="button" class="btn btn-outline-dark">Shows</button></li>
+            <li><button id="pplBtn" type="button" class="btn btn-outline-dark">People</button></li>
+            <li><button id="commentsBtn" type="button" class="btn btn-outline-dark">Comments</button></li>
+     </div>
 
-        <label for = "alias"><strong>ALIAS: </strong></label>
+
+    <div id ="surveyPage">
+    <br id = "survey">
+        <h2>A little about you...</h2>
+        <label for = "alias">ALIAS:</label>
         <input type = "text" id="alias"></br>
 
         <label for ="ageRange">1. What is your age range? </label>
-
-        <select id = "ageRange" name="ageRange" required>
-            <option value = "18-24">18-24</option>
-            <option value = "25-34">25-34</option>
-            <option value = "35-44">35-44</option>
-            <option value = "45+">45+</option>
-
-        </select>
-    </br>
+                <select id = "ageRange" name="ageRange" required>
+                    <option value = "18-24">18-24</option>
+                    <option value = "25-34">25-34</option>
+                    <option value = "35-44">35-44</option>
+                    <option value = "45+">45+</option>
+                </select>
+        </br>
 
         <label for ="screenTime">2. How often do you watch movies or TV Shows?</label>
-
-        <select id = "screenTime" name="screenTime" required>
-
-            <option value = "Daily">Daily</option>
-            <option value = "A few times a week">A few times a week</option>
-            <option value = "Once a week">Once a week</option>
-            <option value = "Rarely">Rarely</option>
-
-        </select>
-
-    </br>
-    </br>
-
-        <p>Viewing Preferences</p>
+                <select id = "screenTime" name="screenTime" required>
+                    <option value = "Daily">Daily</option>
+                    <option value = "A few times a week">A few times a week</option>
+                    <option value = "Once a week">Once a week</option>
+                    <option value = "Rarely">Rarely</option>
+                </select></br>
 
         <label for ="viewType">3. Which do you watch more often? </label>
-
-        <select id = "viewType" name="viewType" required>
-
-            <option value = "movies">Movies</option>
-            <option value = "tvShows">TV Shows</option>
-            <option value = "bothEqually">Both Equally</option>
-
-        </select>
-
+                <select id = "viewType" name="viewType" required>
+                    <option value = "movies">Movies</option>
+                    <option value = "tvShows">TV Shows</option>
+                    <option value = "bothEqually">Both Equally</option>
+                </select>
         </br>
 
         <label for = "genres">4. What are your favorite Genres? (Select all that apply)</label>
         </br>
+                <input type = "checkbox" id="action" value="action">
+                <label for = "action">Action</label></br>
 
-        <input type = "checkbox" id="action" value="action">
-        <label for = "action">Action</label></br>
+                <input type = "checkbox" id="comedy" value="comedy">
+                <label for = "comedy">Comedy</label></br>
 
-        <input type = "checkbox" id="comedy" value="comedy">
-        <label for = "comedy">Comedy</label></br>
+                <input type = "checkbox" id="Drama" value="Drama">
+                <label for = "Drama">Drama</label></br>
 
-        <input type = "checkbox" id="Drama" value="Drama">
-        <label for = "Drama">Drama</label></br>
+                <input type = "checkbox" id="horror" value="horror">
+                <label for = "horror">Horror</label></br>
 
-        <input type = "checkbox" id="horror" value="horror">
-        <label for = "horror">Horror</label></br>
-
-        <input type = "checkbox" id="thriller" value="thriller">
-        <label for = "thriller">Thriller</label></br>
-
-
+                <input type = "checkbox" id="thriller" value="thriller">
+                <label for = "thriller">Thriller</label></br>
         <button id = "submitBtn" type ="button" class="btn btn-secondary btn-sm">Submit</button>
-
     </br>
 
-    <label for ="surveyResults">RESULTS</label>
-    <ul id ="surveyResults"></ul>
-
-
-
-
-
+        <label for ="surveyResults">RESULTS</label>
+        <ul id ="surveyResults"></ul>
     </form>
 </div>
 
 <script src = "../scripts/survey.js"></script>
+<script src ="../scripts/event.js"></script>
+
 </body>
 </html>
