@@ -37,6 +37,12 @@
     gap: 15px;
 }
 
+#showPeople{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
 .show-card {
     max-width: 400px;
     padding: 15px;
