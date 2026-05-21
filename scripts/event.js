@@ -10,3 +10,12 @@
     document.querySelector("#pplBtn").addEventListener("click", () => {
         window.location.href = "../pages/people.html";
     });
+
+     document.querySelector("#pplBtn").addEventListener("click", () => {
+        window.location.href = "../pages/people.html";
+    });
+
+
+     document.querySelector("#commentsBtn").addEventListener("click", () => {
+        window.location.href = "../pages/comments.html";
+    });

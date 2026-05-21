@@ -1,6 +1,6 @@
 body{
     background-color: rgb(243, 239, 239);
-    padding: 10px
+    padding: 10px;
 }
 
 h1{
@@ -30,7 +30,7 @@ img {
 .main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px:
+    gap: 5px;
 }
 
 .main li{
