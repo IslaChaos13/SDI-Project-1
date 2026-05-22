@@ -10,22 +10,13 @@
     gap: 5px;
 }
 
-#surveyPage-h2{
-    font-family: Cambria;
-    font-size: xx-large;
-}
-
 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+     background-color: rgb(222, 222, 207)
 }
 
-
-
-#survey{
-    display: flexbox;
-}
 
 
 
