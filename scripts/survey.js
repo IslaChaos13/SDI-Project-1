@@ -6,6 +6,8 @@ const list = document.querySelector("#surveyResults");
 
 function addResponse(){
 
+    event.preventDefault();
+
     const card = document.createElement('div');
 
 
@@ -13,9 +15,12 @@ function addResponse(){
     const ageRange = document.querySelector("#ageRange").value;
     const screenTime = document.querySelector("#screenTime").value;
     const viewType = document.querySelector("#viewType").value;
+    const fav = document.querySelector('#favoriteShow').value;
 
     const aliases = document.createElement("li");
     aliases.textContent = aliasName;
+    const favS = document.createElement("li");
+    favS.textContent = fav;
     const ageBracket = document.createElement("li");
     ageBracket.textContent = "Age range: " + ageRange;
     const viewTime = document.createElement("li");
@@ -23,7 +28,7 @@ function addResponse(){
     const viewItem = document.createElement("li");
     viewItem.textContent = "Watches more: " + viewType;
 
-    card.append(aliases, ageBracket, viewTime, viewItem)
+    card.append(aliases, favS, ageBracket, viewTime, viewItem)
 
     const checkedGenres = document.querySelectorAll(
         'input[type="checkbox"]:checked'

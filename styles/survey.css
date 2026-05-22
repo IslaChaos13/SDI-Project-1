@@ -17,9 +17,6 @@
      background-color: rgb(222, 222, 207)
 }
 
-
-
-
 #surveyResults{
     display:grid;
     grid-template-columns: repeat(4, 1fr);

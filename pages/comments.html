@@ -11,7 +11,7 @@
     <div id = "header">
         <img src="../images/bingeMaster.png" class="img-thumnail" width="150px" height="auto" alt="bingeMaster">
 
-        <h1> Let's hear from you!</h1>
+        <h1 class="display-6"> Let's hear from you!</h1>
 
     </div>
 
@@ -52,16 +52,16 @@
 
             <h2 class="card-title text-center mb-4">A little about you...</h2>
 
-            <form>
+            <form id = "survey">
 
                 <div class="mb-3">
                     <label class="form-label">Alias</label>
-                    <input type="text" class="form-control">
+                    <input type="text" id ="alias" t class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">Favorite Show</label>
-                    <input type="text" class="form-control">
+                    <label class="form-label" >Favorite Show</label>
+                    <input type="text" id="favoriteShow" class="form-control">
                 </div>
 
                 <label for ="ageRange">1. What is your age range? </label>
@@ -83,29 +83,30 @@
 
         <label for ="viewType">3. Which do you watch more often? </label>
                 <select id = "viewType" name="viewType" required>
-                  <span>
-                    <option value = "movies">Movies</option>
-                    <option value = "tvShows">TV Shows</option>
-                    <option value = "bothEqually">Both Equally</option>
-                </span></select>
+
+                    <option value = "Movies">Movies</option>
+                    <option value = "TV Shows">TV Shows</option>
+                    <option value = "Both Equally">Both Equally</option>
+                </select>
+
                 <label for = "genres">4. What are your favorite Genres? (Select all that apply)</label>
         </br>
-                <input type = "checkbox" id="action" value="action">
-                <label for = "action">Action</label></br>
+                <input type = "checkbox" id="action" value="Action">
+                <label for = "Action">Action</label></br>
 
-                <input type = "checkbox" id="comedy" value="comedy">
+                <input type = "checkbox" id="comedy" value="Comedy">
                 <label for = "comedy">Comedy</label></br>
 
                 <input type = "checkbox" id="Drama" value="Drama">
                 <label for = "Drama">Drama</label></br>
 
-                <input type = "checkbox" id="horror" value="horror">
+                <input type = "checkbox" id="horror" value="Horror">
                 <label for = "horror">Horror</label></br>
 
-                <input type = "checkbox" id="thriller" value="thriller">
+                <input type = "checkbox" id="thriller" value="Thriller">
                 <label for = "thriller">Thriller</label></br>
 
-                <button type="submit" class="btn btn-primary w-100">
+                <button type="submit" id="submitBtn" class="btn btn-primary w-100">
                     Submit
                 </button>
 
@@ -119,9 +120,6 @@
       <label for ="surveyResults">RESULTS</label>
         <ul id ="surveyResults"></ul>
 </body>
-
-
-
 
 </div>
 
