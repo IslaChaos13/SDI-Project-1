@@ -14,23 +14,39 @@
 
 <body>
     <div id = "showsHeader">
-    <img src = "../images/bingeMaster.png" alt="Binge Master">
-    <h1>Binge Master</h1>
+      <img src="../images/bingeMaster.png" class="img-thumbnail" width="150px" height="auto"  alt="BingeMaster">
+    <!-- <img src = "../images/bingeaster.png" alt ="Binge Master"> -->
 
+    <h1>Binge Master</h1>
+</div>
     <p>Looking for your next binge-worthy obsession: drama, plot twists, questionable decisions, and at least one character you'll defend with your life. A show so good that you accidentally watch “just one more episode” until the sun comes up and your snacks mysteriously disappear. Pick your poison.”
     </p>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">Binge Master</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./shows.html">Shows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./people.html">People</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="./comments.html">Comments</a>
+        </li>
+      </ul>
     </div>
-
-    <div id = "navBar">
-
-        <ul class="navigation">
-        <li><button id="homeBtn" type="button" class="btn btn-outline-dark">Home</button></li>
-        <li><button id="showBtn" type="button" class="btn btn-outline-dark">Shows</button></li>
-        <li><button id="pplBtn" type="button" class="btn btn-outline-dark">People</button></li>
-        <li><button id="commentsBtn" type="button" class="btn btn-outline-dark">Comments</button></li>
-
-    </ul>
-    </div>
+  </div>
+</nav>
         <div id="showDetails"></div>
 
         <div id="about" link href = "./pages/about.html">About</div>

@@ -1,56 +1,28 @@
-/* PEOPLE */
 
-#header{
-    display: glex
-    justify-content: space-between;
-
-    img{
-        padding: 50px;
-        justify-content: right;
-    }
-
-    h1{
-    font-family: Cambria;
-    text-align: center;
-    }
-
-}
-
-
-
-/* SHOWS */
 #showsHeader{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5px;
     gap: 5px;
+    background-color: rgb(222, 222, 207);
+};
 
-    img{
-        width: 10%
-    }
+#showsHeader img{
+    width: 100%;
+    max-width: 300px;;
+    height: auto;
 }
-#navBar{
-    list-style-type: none;
-    gap: 0;
-    padding: 0;
-
-
-    li{
-        display: inline-block;
-        margin: 0 3px;
-    }
-}
-
 
 #showDetails{
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 15px;
 }
 
 #showPeople{
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 15px;
 }
 
@@ -59,10 +31,12 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     background: #fff;
+    max-width: 400px;
 }
     .show-card img {
     justify-content: center;
-    width: 75%%;
+    width: 75%;
+    height: auto;
     border-radius: 8px;
 }
 

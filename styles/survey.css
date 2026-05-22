@@ -13,8 +13,6 @@
 #surveyPage-h2{
     font-family: Cambria;
     font-size: xx-large;
-
-    color: red;
 }
 
 #header{
@@ -23,13 +21,7 @@
     align-items: center;
 }
 
-.navBar{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    list-style-type: none;
-    gap: 5px;
-    padding: 10px;
-}
+
 
 #survey{
     display: flexbox;
