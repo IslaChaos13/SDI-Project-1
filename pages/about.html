@@ -3,19 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../styles/main-styles.css">
+     <link rel="stylesheet" href="../styles/survey.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>About Me</title>
 </head>
 <body>
-  <ul class="navBar">
-        <li><button id="homeBtn" type="button" class="btn btn-outline-dark">Home</button></li>
-        <li><button id="showBtn" type="button" class="btn btn-outline-dark">Shows</button></li>
-        <li><button id="pplBtn" type="button" class="btn btn-outline-dark">People</button></li>
-        <li><button id="commentsBtn" type="button" class="btn btn-outline-dark">Comments</button></li>
-    </ul>
 
-<div id="about" link href = "./pages/about.html">About</div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">Binge Master</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="./shows.html">Shows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./people.html">People</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" aria-current="page"href="./comments.html">Comments</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+    <div id = "aboutMe-Layout">
+
+      <div style="background-color: rgb(169, 169, 233);">
+
+<figure class="text-center">
+  <blockquote class="blockquote">
+    <p>"The Wizard's First Rule: People are stupid; given proper motivation almost anyone will believe almost anything."</p>
+  </blockquote>
+
+    <blockquote class="blockquote">
+    <p>"Sometimes, it is necessary to step beyond what you have known and to reach for something more."</p>
+  </blockquote>
+
+    <blockquote class="blockquote">
+    <p>"The sun has already set ont he days we made those choices. We must concentrate on what we can do tomorrow; we can't relive yesterday."</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Terry Goodkind <cite title="Source Title">The Sword of Truth Series</cite>
+  </figcaption>
+</figure>
+ </div>
+
+<div class="card" style="width: 25rem;">
+  <div class="card-header">
+    Coding Background
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Took a basic JavaScript course about fourteen years ago, making this Software Development course with Galvanize the second formal programming course completed.</li>
+    <li class="list-group-item">Found this course more engaging and effective for retaining information compared to the first online coding experience.</li>
+    <li class="list-group-item">Noticed that both courses began with the classic “Hello World” exercise, reinforcing the importance of foundational programming concepts.</li>
+    <li class="list-group-item">Recognized that every programmer starts with the same basic principles before advancing to more complex topics.</li>
+    <li class="list-group-item">Developed greater confidence in approaching coding challenges, asking questions, and connecting concepts throughout the course.</li>
+    <li class="list-group-item">Benefited from the course structure, hands-on exercises, and practical applications, which improved understanding and long-term retention of programming skills.</li>
+
+  </ul>
+</div>
+
+<div style="background-color: rgb(169, 169, 233);">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>Remembering how to properly apply and integrate APIs while troubleshooting functionality and data display issues. <br>Designing a visually appealing and user-friendly website layout with consistent organization and responsiveness.<br> Avoiding constant design changes after achieving a good layout and learning when to finalize decisions. </p>
+      </blockquote>
+
+      <figcaption class="blockquote-footer">
+        Isla Chaos 13 <cite title="Source Title">Project Challenges</cite>
+      </figcaption>
+    </figure>
+</div>
+
+
+</div>
+
+<a class ="nav-link" style = "text-align: center" href="./about.html">About</a>
 
 <script src="../scripts/event.js"></script>
 
