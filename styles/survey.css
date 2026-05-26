@@ -17,22 +17,6 @@
      background-color: rgb(222, 222, 207)
 }
 
-/* #surveyResults{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    list-style-type: none;
-    padding: 15px;
-    border: 10px solid #ddd;
-    border-radius: 10px;
-} */
-
-/* #surveyResults{
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    list-style-type: none;
-
-} */
 
 #surveyResults {
     display: grid;
