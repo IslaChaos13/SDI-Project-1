@@ -17,6 +17,7 @@ function addResponse(event){
     event.preventDefault();
 
     const card = document.createElement('div');
+    card.classList.add("result-card");
 
     const aliasName = document.querySelector("#alias").value;
     const ageRange = document.querySelector("#ageRange").value;
@@ -24,19 +25,9 @@ function addResponse(event){
     const viewType = document.querySelector("#viewType").value;
     const fav = document.querySelector('#favoriteShow').value;
 
-    const aliases = document.createElement("li");
-    aliases.textContent = aliasName;
-    const favS = document.createElement("li");
-    favS.textContent = fav;
-    const ageBracket = document.createElement("li");
-    ageBracket.textContent = "Age range: " + ageRange;
-    const viewTime = document.createElement("li");
-    viewTime.textContent = "Watches: " + screenTime;
-    const viewItem = document.createElement("li");
-    viewItem.textContent = "Watches more: " + viewType;
-
-    card.append(aliases, favS, ageBracket, viewTime, viewItem)
-
+    card.innerHTML = `
+    <p>${aliasName}<br> Favorite Show ${fav} <br>Age Range: ${ageRange}<br>Watches: ${screenTime}<br>Watches More: ${viewType}</p>
+    `
     const countGenres = document.querySelectorAll('input[type="checkbox"]:checked');
     countGenres.forEach((box) => {
     total[box.value]++;
@@ -63,7 +54,7 @@ function buildGraph(event){
             label.textContent = `${genre}:`;
 
             bar.style.height = "20px";
-            bar.style.width = `${count * scale}%`;
+            bar.style.width = `${Math.min(count * scale, 100)}%`;
             bar.style.background = "steelblue";
             bar.style.margin = "5px 0";
 

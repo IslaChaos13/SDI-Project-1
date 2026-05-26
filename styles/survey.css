@@ -17,7 +17,7 @@
      background-color: rgb(222, 222, 207)
 }
 
-#surveyResults{
+/* #surveyResults{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
@@ -25,6 +25,36 @@
     padding: 15px;
     border: 10px solid #ddd;
     border-radius: 10px;
+} */
+
+/* #surveyResults{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    list-style-type: none;
+
+} */
+
+#surveyResults {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 15px;
+    border: 3px solid rgb(9, 9, 62); /* border around whole results box */
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+/* each submission card */
+.result-card {
+    border: 2px solid rgb(9, 9, 62);
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* optional: nicer spacing inside card */
+.result-card p {
+    margin: 5px 0;
 }
 
 #aboutMe-Layout{
